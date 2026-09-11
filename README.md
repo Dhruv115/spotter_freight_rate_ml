@@ -54,7 +54,7 @@ python score.py --predictions validation_predictions.csv \
 
 `train.py` takes under a minute on a single CPU core.
 
-## Approach in one paragraph
+## Approach 
 
 A `CatBoostRegressor` is trained on `log(posted_rate / distance)` — i.e. it
 predicts **rate per mile**, converted back to a dollar prediction by
