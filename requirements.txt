@@ -1,0 +1,9 @@
+# --- required by the provided score.py ---
+matplotlib>=3.8,<4
+numpy>=1.26,<3
+pandas>=2.0,<3
+
+# --- required by src/train.py and src/predict.py ---
+catboost>=1.2.8,<2
+scikit-learn>=1.4,<2
+joblib>=1.3,<2

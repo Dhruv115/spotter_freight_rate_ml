@@ -1,0 +1,144 @@
+{
+  "split_strategy_comparison": {
+    "time_based": {
+      "MAE": 114.67,
+      "RMSE": 649.41,
+      "median_AE": 41.66,
+      "MAPE_%": 5.48,
+      "n": 4853
+    },
+    "random": {
+      "MAE": 91.26,
+      "RMSE": 625.92,
+      "median_AE": 26.64,
+      "MAPE_%": 3.8,
+      "n": 7200
+    }
+  },
+  "unseen_city_experiment": {
+    "held_out_cities": [
+      "Albany",
+      "Bakersfield",
+      "Lubbock",
+      "New York",
+      "Salt Lake City",
+      "Syracuse"
+    ],
+    "rows_touching_unseen_city_in_training_removed": 8422,
+    "never_seen_city_holdout": {
+      "MAE": 154.61,
+      "RMSE": 893.94,
+      "median_AE": 53.25,
+      "MAPE_%": 5.82,
+      "n": 948
+    },
+    "known_city_holdout_same_model": {
+      "MAE": 122.95,
+      "RMSE": 577.69,
+      "median_AE": 55.12,
+      "MAPE_%": 6.37,
+      "n": 3905
+    }
+  },
+  "model_B_reduced_features": {
+    "MAE": 129.23,
+    "RMSE": 654.41,
+    "median_AE": 51.92,
+    "MAPE_%": 5.84,
+    "n": 4853
+  },
+  "final_model_feature_importance_full": [
+    {
+      "feature": "equipment",
+      "importance": 23.58644302016558
+    },
+    {
+      "feature": "distance_log",
+      "importance": 14.32467733812878
+    },
+    {
+      "feature": "geo_distance",
+      "importance": 14.27291036282186
+    },
+    {
+      "feature": "distance",
+      "importance": 9.92900644714368
+    },
+    {
+      "feature": "quote_signal",
+      "importance": 8.942355381034055
+    },
+    {
+      "feature": "weight_abs",
+      "importance": 7.307392357491892
+    },
+    {
+      "feature": "month",
+      "importance": 4.170267399551654
+    },
+    {
+      "feature": "market_index",
+      "importance": 2.916599904868096
+    },
+    {
+      "feature": "delivery_lat",
+      "importance": 2.14426091255623
+    },
+    {
+      "feature": "month_cos",
+      "importance": 2.1152127589541654
+    },
+    {
+      "feature": "pickup_lat",
+      "importance": 1.9711985119477993
+    },
+    {
+      "feature": "pickup",
+      "importance": 1.6301347562114878
+    },
+    {
+      "feature": "route",
+      "importance": 1.509630426768609
+    },
+    {
+      "feature": "delivery",
+      "importance": 1.3684096574182734
+    },
+    {
+      "feature": "pickup_lon",
+      "importance": 0.8623076887898432
+    },
+    {
+      "feature": "delivery_lon",
+      "importance": 0.8226421040278746
+    },
+    {
+      "feature": "month_sin",
+      "importance": 0.726895565114573
+    },
+    {
+      "feature": "distance_ratio",
+      "importance": 0.4330504293206059
+    },
+    {
+      "feature": "dow_sin",
+      "importance": 0.3941917871805466
+    },
+    {
+      "feature": "dow_cos",
+      "importance": 0.324006454847082
+    },
+    {
+      "feature": "dow",
+      "importance": 0.19811327977191937
+    },
+    {
+      "feature": "route_eq",
+      "importance": 0.050293455885403446
+    },
+    {
+      "feature": "weight_missing",
+      "importance": 0.0
+    }
+  ]
+}
