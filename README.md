@@ -60,13 +60,16 @@ A `CatBoostRegressor` is trained on `log(posted_rate / distance)` — i.e. it
 predicts **rate per mile**, converted back to a dollar prediction by
 multiplying by `distance`. This single choice (adopted from one of the two
 draft solutions this report merges) is the largest accuracy improvement
-found across either draft. Validation uses a **time-based holdout** (train
+found across either draft. 
+Validation uses a **time-based holdout** (train
 Jan–Sep 2025, validate on October) because the real task is forecasting the
 unseen Nov/Dec period, not interpolating within data the model has already
-partly seen. An additional experiment holds specific cities out of training
+partly seen. 
+An additional experiment holds specific cities out of training
 entirely to directly measure — not just assume — how much accuracy degrades
 on cities never seen during training, since `validation.csv` contains 8 such
-cities. Two models are trained: a full-feature model for
+cities.
+Two models are trained: a full-feature model for
 `validation_predictions.csv`, and a reduced-feature model (no
 `market_index`/`quote_signal`, which `december_chart_inputs.csv` doesn't
 provide) for the December chart. Full details in `report.docx`.
