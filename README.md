@@ -1,4 +1,4 @@
-# Freight Rate Prediction — Spotter ML Engineer Assessment (merged solution)
+# Freight Rate Prediction — Spotter ML Engineer Assessment
 
 Predicts `posted_rate` for freight loads with a CatBoostRegressor trained on
 **log(rate per mile)**. See `report.docx` / `report.pdf` for the full
