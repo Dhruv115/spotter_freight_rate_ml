@@ -11,8 +11,8 @@ two earlier drafts.
 
 ```
 data/
-  train_test.csv, validation.csv          NOT included in this repo — see
-                                           GITHUB_SETUP.md. Place your local
+  train_test.csv, validation.csv          NOT included in this repo 
+                                            Place your local
                                            copies here before running.
   validation_predictions_template.csv     included (12,000 load_ids, no data)
   december_chart_inputs.csv               included — completed with
