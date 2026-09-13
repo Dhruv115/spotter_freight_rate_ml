@@ -7,7 +7,7 @@ comparison, and the December 2025 forecast chart. `report.docx` Section 2
 ("What changed, and why") explains how this version merges and improves on
 two earlier drafts.
 
-## Structure
+## Structure 
 
 ```
 data/
