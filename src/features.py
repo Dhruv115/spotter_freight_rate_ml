@@ -68,9 +68,9 @@ def prepare(df: pd.DataFrame, city_lookup: pd.DataFrame | None = None) -> pd.Dat
         if c not in x.columns:
             x[c] = np.nan
 
-    # --- weight: fix the sign-flip artifact, keep only the corrected value
+    # --- weight: fix the sign-flip artifact and keep only the corrected value
     # plus an explicit missingness flag. The raw signed value is NOT kept as
-    # a feature -- abs(negative weight) matches the positive-weight
+    # a feature -- abs(negative weight) matches the positive weight
     # distribution almost exactly, so the sign carries no real signal and
     # only risks the model learning spurious splits on it.
     x["weight_missing"] = x["weight"].isna().astype(int)
